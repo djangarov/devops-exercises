@@ -1,8 +1,8 @@
 name: 'Terraform'
 
 env:
- access_key: ${{ secrets.ACCESS_KEY }}
- secret_key: ${{ secrets.SECRET_KEY }}
+  access_key: ${{ secrets.ACCESS_KEY }}
+  secret_key: ${{ secrets.SECRET_KEY }}
 
 on:
   workflow_dispatch:

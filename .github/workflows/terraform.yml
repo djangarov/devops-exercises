@@ -6,12 +6,12 @@ on:
     branches:
       - main
     paths:
-      - terraform/**
+      - terraform/ec2/**
   pull_request:
     branches:
       - main
     paths:
-      - terraform/**
+      - terraform/ec2/**
 
 permissions:
   contents: read

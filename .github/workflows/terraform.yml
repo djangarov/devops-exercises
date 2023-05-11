@@ -51,8 +51,8 @@ jobs:
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       env:
-        access_key: ${{ secrets.ACCESS_KEY }}
-        secret_key: ${{ secrets.SECRET_KEY }}
+        TF_VAR_access_key: ${{ secrets.ACCESS_KEY }}
+        TF_VAR_secret_key: ${{ secrets.SECRET_KEY }}
       run: terraform plan -input=false
       working-directory: ./terraform/ec2
 
